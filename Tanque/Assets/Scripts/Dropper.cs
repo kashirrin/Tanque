@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Dropper : MonoBehaviour
 {
+    // Se crean los objetos y variables
     MeshRenderer renderer;
     Rigidbody rigidBody; 
     [SerializeField] int timer = 0;
@@ -19,6 +20,7 @@ public class Dropper : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Se asigna un contador, el cual determinará cuando deberá activar la gravedad del objeto asignado.
         if (Time.time < timer)
         {
             

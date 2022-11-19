@@ -20,11 +20,12 @@ public class Tank1Move : MonoBehaviour
     {
         MovePlayer();
     }
-
+    // Función de movimiento del vehiculo
     void MovePlayer(){
 
         if (Input.GetKey(KeyCode.W))
         {
+            // la propiedad Translate sirve para moverte dependiendo los ejes seleccionados, en este caso forward que utiliza el eje Z
             transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
             if (!aus.isPlaying)
             {

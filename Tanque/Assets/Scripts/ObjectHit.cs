@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ObjectHit : MonoBehaviour
 {
+    // Función de colición, cambiará el color del objeto al que hagas contacto.
     private void OnCollisionEnter(Collision other) 
     {
         if (other.gameObject.tag == "Player")
